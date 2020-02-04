@@ -5,10 +5,23 @@
 function mostrar()
 {
 	var nombre;
+	var apellido;
 
-	nombre = prompt("Ingrese su nombre ")
+	nombre = prompt("Ingrese su nombre ");
+	apellido = prompt("Ingresa tu apellido");
 
-	document.getElementById("elNombre").value = nombre ; 
+	document.getElementById("elNombre").value = nombre ;
+	document.getElementById("elApellido").value = apellido ;
 
+}
+function alerta()
+{
+	// var nombre;
+	// var apellido;
+
+	nombre = document.getElementById("elNombre").value;
+	apellido = document.getElementById("elApellido").value;
+
+	alert(nombre + " " + apellido)
 }
 

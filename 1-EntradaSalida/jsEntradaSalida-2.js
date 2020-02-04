@@ -6,6 +6,6 @@ function mostrar()
     
     nombre = prompt("Ingrese su nombre: ");
     
-    alert("nombre")
+    alert(nombre)
 }
 
