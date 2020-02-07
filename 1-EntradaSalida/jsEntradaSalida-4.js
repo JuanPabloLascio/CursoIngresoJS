@@ -16,8 +16,8 @@ function mostrar()
 }
 function alerta()
 {
-	// var nombre;
-	// var apellido;
+	 var nombre;
+	 var apellido;
 
 	nombre = document.getElementById("elNombre").value;
 	apellido = document.getElementById("elApellido").value;
