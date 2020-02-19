@@ -6,13 +6,45 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
+    var largo = parseInt(document.getElementById("Largo").value);
+    var ancho = parseInt(document.getElementById("Ancho").value);
+    var radio = parseInt(document.getElementById("Radio").value);
+    var perimetro;
+
+    perimetro = ( largo * 2) + ( ancho * 2);
+
+    alert("Se necesita " + perimetro * 3 +" metros, para dar 3 vueltas.");
+
 
 }
 function Circulo () 
 {
+    var largo = parseInt(document.getElementById("Largo").value);
+    var ancho = parseInt(document.getElementById("Ancho").value);
+    var radio = parseInt(document.getElementById("Radio").value);
+    var perimetro = Math.floor(2 * Math.PI * radio);
+
+    alert("Se necesita " + perimetro * 3 + " metros para dar 3 vueltas.");
 	
 }
 function Materiales () 
 {
-	
+    var largo = parseInt(document.getElementById("Largo").value);
+    var ancho = parseInt(document.getElementById("Ancho").value);
+    var radio = parseInt(document.getElementById("Radio").value);
+    var area;
+    var cemento;
+    var cal;
+
+    //AREA DEL RECTANGULO Base * Altura. 1*1 2 cemento y 3 cal
+
+    area = largo * ancho;
+    cemento = area * 2;
+    cal = area * 3;
+
+    alert("Tu area es de " + area + " metros cuadrado. Necesitas " + cemento + " bolsas de cemento y " + cal + " de cal.");
+
+
+
+
 }
