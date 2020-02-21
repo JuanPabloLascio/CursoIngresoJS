@@ -1,8 +1,10 @@
 function mostrar()
 {
 
-	var contador;
+	var contador = 0;
+	var promedio;
 	var acumulador;
+	var suma = 0;
 	//De esta forma me funciona bien..
 	/*var num1 = parseInt(prompt("Ingrese un numero"));
 	var num2 = parseInt(prompt("Ingrese un numero"));
@@ -10,14 +12,21 @@ function mostrar()
 	var num4 = parseInt(prompt("Ingrese un numero"));
 	var num5 = parseInt(prompt("Ingrese un numero"));
 
-	acumulador = num1 + num2 + num3 + num4 + num5;*/
+	promedio = num1 + num2 + num3 + num4 + num5;*/
 
-	
+	acumulador = parseInt(prompt("Ingrese un numero:"));
+
+	while ( contador < 5 ) {
+		acumulador = parseInt(prompt("Ingrese otro numero:"));
+		contador = contador + 1;
+		suma = suma + acumulador;
 
 
-	
+	}
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/5;
+	promedio = suma / 5;
+
+document.getElementById('suma').value=suma;
+document.getElementById('promedio').value=promedio;
 
 }//FIN DE LA FUNCIÓN
