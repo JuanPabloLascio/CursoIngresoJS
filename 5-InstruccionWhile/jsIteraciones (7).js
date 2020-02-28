@@ -4,7 +4,7 @@ function mostrar()
 	var contador=0;
 	var numero=0;
 	var acumulador=0;
-	var respuesta='s';
+	var respuesta;
 	
 	do {
 
@@ -17,7 +17,7 @@ function mostrar()
 
 		contador = contador + 1;
 
-		numero = parseInt(prompt("Quiere ingresar otro numero?"));
+		respuesta = prompt("Quiere ingresar otro numero?");
 	} while ( respuesta == 's')
 
 

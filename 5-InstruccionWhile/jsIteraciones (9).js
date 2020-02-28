@@ -5,7 +5,7 @@ function mostrar()
 	var numero;
 	var maximo;
 	var minimo;
-	var respuesta = 's';
+	var respuesta;
 
 	do {
 		numero = parseInt(prompt("Ingrese un numero:"));

@@ -5,7 +5,7 @@ function mostrar()
 	var positivo=0;
 	var negativo=1;
 	var numero;
-	var seguir ='s';
+	var seguir;
 	do {
 
 		numero = parseInt(prompt("Ingrese un numero:"));
